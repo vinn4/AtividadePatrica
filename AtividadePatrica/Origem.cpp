@@ -127,12 +127,13 @@ void Mostrar_Playlist()
 	while (ElementoVarredura != NULL)
 
 	{
-		printf("Musica: %s \n", ElementoVarredura->music);
-		printf("Artista: %s \n", ElementoVarredura->artist);
-		printf("Duração: %.2f \n", ElementoVarredura->temp);
+		printf("Musica: %s \t", ElementoVarredura->music);
+		printf("Artista: %s \t", ElementoVarredura->artist);
+		printf("Duração: %.2f \t", ElementoVarredura->temp);
+		printf("\n");
 		ElementoVarredura = ElementoVarredura->prox;
 	}
-	printf("\n\n");
+	printf("\n");
 	system("pause");
 	return;
 }
